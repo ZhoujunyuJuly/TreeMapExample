@@ -244,3 +244,7 @@ B树满足条件：
 ## B+树
 
 ![](https://ivanzz1001.github.io/records/assets/img/data_structure/ds_bplus_tree1.jpg)
+
+[B+树的生成](https://www.bilibili.com/video/BV1cf4y1s727?spm_id_from=333.337.search-card.all.click&vd_source=8b91153a2dbbe77b473d729f57f2c650)
+
+[视频讲解与B树的区别，主要有两点，只有两分钟，五星推荐！！！](https://www.bilibili.com/video/BV1PS4y137LJ?spm_id_from=333.337.search-card.all.click&vd_source=8b91153a2dbbe77b473d729f57f2c650)
