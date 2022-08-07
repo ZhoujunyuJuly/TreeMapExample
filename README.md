@@ -135,7 +135,7 @@ TreeMap继承于AbstractMap，实现了Map, Cloneable, NavigableMap, Serializabl
 
 **50W以下插入**   使用TreeMap
 
-**50W以上插入 **  使用HashMap
+**50W以上插入**  使用HashMap
 
 **如有排序需求，且非多线程，低并发**    使用TreeMap
 
