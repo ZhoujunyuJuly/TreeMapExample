@@ -7,10 +7,10 @@ import java.util.Set;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-public class TreeMapFunction<K,V> {
+public class TreeMapUtils<K,V> {
     private TreeMap<K,V> mTreeMap;
 
-    public TreeMapFunction(TreeMap treeMap) {
+    public TreeMapUtils(TreeMap treeMap) {
         mTreeMap = treeMap;
     }
 
@@ -56,6 +56,15 @@ public class TreeMapFunction<K,V> {
         return mTreeMap.ceilingEntry(key);
     }
 
+
+    /**
+     * 返回大于或者等于key的第一个元素：
+     * @param key
+     * @return
+     */
+    public K ceilingKey(K key){
+        return mTreeMap.ceilingKey(key);
+    }
     /***
      * 返回大于key的第一个元素：
      * @param key
