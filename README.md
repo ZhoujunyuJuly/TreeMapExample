@@ -49,16 +49,21 @@ TreeMap继承于AbstractMap，实现了Map, Cloneable, NavigableMap, Serializabl
 
 - TreeMap 实现了Java.io.Serializable接口，支持序列化操作，可通过Hessian协议进行传输；
 
-  
+<br>
 
 **TreeMap节点结构**
 
 底层存储结构与HashMap基本相同，使用Entry对象，存储key--value键值对。
 
+<br>
+
+
 **TreeMap 构造函数**
 
 所有的操作都是通过根节点来进行。
 
+
+<br>
 
 
 ## 性能对比
@@ -74,6 +79,8 @@ TreeMap继承于AbstractMap，实现了Map, Cloneable, NavigableMap, Serializabl
 **分析**     AVL 树比红黑树更加平衡，但AVL树在插入和删除的时候会存在大量的旋转操作，影响性能。而 **红黑树 **最多进行 **三次旋转**。
 
 
+<br>
+<br>
 
 
 
@@ -137,10 +144,13 @@ TreeMap继承于AbstractMap，实现了Map, Cloneable, NavigableMap, Serializabl
 
 **50W以上插入**  使用HashMap
 
+
 **如有排序需求，且非多线程，低并发**    使用TreeMap
 
 **如有排序需求，且为多线程，高并发**    使用 [ConcurrentSkipListMap](https://www.jianshu.com/p/edc2fd149255)，适用于大规模数据的并发访问
 
+
+<br>
 
 
 **分析：**
@@ -150,7 +160,7 @@ TreeMap继承于AbstractMap，实现了Map, Cloneable, NavigableMap, Serializabl
 - ConcurrentSkipListMap自带锁机制
 
 
-
+<br>
 
 
 ## 应用
@@ -172,7 +182,7 @@ TreeMap继承于AbstractMap，实现了Map, Cloneable, NavigableMap, Serializabl
 [详细资料](https://juejin.cn/post/6953547181299073037)
 
 
-
+<br>
 
 
 # 附录
