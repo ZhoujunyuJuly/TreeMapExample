@@ -1,0 +1,82 @@
+无序输入的数据如下：
+Bill,分数：81,身高：181
+Jenny,分数：90,身高：170
+Andrew,分数：62,身高：174
+Linda,分数：93,身高：160
+Lucy,分数：88,身高：165
+Jack,分数：54,身高：166
+Monkey,分数：54,身高：163
+Candy,分数：99,身高：162
+
+按照分数排队，分数高的在前面：
+Candy,分数：99,身高：162
+Linda,分数：93,身高：160
+Jenny,分数：90,身高：170
+Lucy,分数：88,身高：165
+<---------------------------插班生(分数：82,身高：144)将要入队
+Bill,分数：81,身高：181
+【【【Andrew,分数：62,身高：174】】】<--------随机选取这位
+Jack,分数：54,身高：163
+
+--------------------------------
+随机选取【【【 Andrew 】】】和不在队列中的【【【插班生】】】
+
+lowerKey(K key) & lowerEntry()
+==排在 Andrew (62) 前面的第一个人是：Bill (81)
+==排在 插班生 (82) 前面的第一个人是：Lucy (88)
+
+floorKey(K key) & floorEntry()
+==排在 Andrew (62) 前面(包括Andrew)的第一个人是：Andrew (62)
+==排在 插班生 (82) 前面(包括插班生)的第一个人是：Lucy (88)
+
+higherKey(K key) & higherEntry()
+==排在 Andrew (62) 后面的第一个人是：Jack (54)
+==排在 插班生 (82) 后面的第一个人是：Bill (81)
+
+ceilingKey(K key) & ceilingKey()
+==排在 Andrew (62) 后面(包括Andrew)的第一个人是：Andrew (62)
+==排在 插班生 (82) 后面(包括插班生)的第一个人是：Bill (81)
+
+firstEntry()
+==排在整个队伍的第一个人是：Candy (99)
+
+lastEntry()
+==排在整个队伍的最后一名是：Jack (54)
+
+descendingMap() & descendingKeySet()
+==逆序视图
+Jack,分数：54,身高：163
+Andrew,分数：62,身高：174
+Bill,分数：81,身高：181
+Lucy,分数：88,身高：165
+Jenny,分数：90,身高：170
+Linda,分数：93,身高：160
+Candy,分数：99,身高：162
+
+subMap(fromK,true,toK,false) 参数 true 表示是否包括起始/终止数据
+==截取范围 fromK = Jenny,toK = Jack
+Jenny,分数：90,身高：170
+Lucy,分数：88,身高：165
+Bill,分数：81,身高：181
+Andrew,分数：62,身高：174
+Jack,分数：54,身高：163
+
+subMap(fromK,true,toK,false) 不传参数,默认包括fromK,不包括toK
+==截取范围 fromK = Jenny,toK = Jack
+Jenny,分数：90,身高：170
+Lucy,分数：88,身高：165
+Bill,分数：81,身高：181
+Andrew,分数：62,身高：174
+
+headMap(fromK)默认返回【小于】K的数，添加参数true可指定是否包含K
+==排在 Lucy(88)前面的数
+Candy,分数：99,身高：162
+Linda,分数：93,身高：160
+Jenny,分数：90,身高：170
+
+tailMap(fromK)默认返回大于【等于】K的数，添加参数true可指定是否包含K
+==排在 Lucy(88)后面的数
+Lucy,分数：88,身高：165
+Bill,分数：81,身高：181
+Andrew,分数：62,身高：174
+Jack,分数：54,身高：163
