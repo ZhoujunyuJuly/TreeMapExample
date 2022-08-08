@@ -3,13 +3,14 @@
 
 **项目说明：**
 
-- TreeMap代码在 /TreeMap/lib/src/main/java/com/example/lib/ 文件夹下
+- TreeMap代码在 [/TreeMap/lib/src/main/java/com/example/lib/](https://github.com/ZhoujunyuJuly/TreeMapExample/tree/main/TreeMap/lib/src/main/java/com/example/lib) 文件夹下
   - **UseOfTreeMap**：可运行的 **主要测试程序**，已包含测试数据，运行后可查看各类方法使用
   - TreeMapUtils：包括 TreeMap 所有使用方法文字注释与解析
   - NavigatorTreeMap：Navigator接口示例
   - HashMapCompater：HashMap与TreeMap **性能测试用例**
 - README.md 为说明文档
 - 测试结果.txt 包含 10万、50万、100万至1000万测试数据结果。
+- TreeMap用例.txt 
 
 
 
